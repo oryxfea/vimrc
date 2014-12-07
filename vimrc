@@ -207,6 +207,10 @@ Plugin 'docunext/closetag.vim'
 "web开发工具
 Plugin 'mattn/emmet-vim'
 
+"vim-signaature {{{1
+"mark插件
+Plugin 'kshenoy/vim-signature'
+
 "wmgraphviz {{{1
 "Graphviz插件
 Plugin 'wannesm/wmgraphviz.vim'
