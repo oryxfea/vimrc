@@ -354,7 +354,7 @@ noremap <C-w>m <C-w>_
 "使用ctrl-p替代原来ctrl-l的刷新功能
 map <c-p> :redraw!<cr>
 "新建tab
-nnoremap <C-t> :tabnew<cr>
+" nnoremap <C-t> :tabnew<cr>
 "切换到指定tab
 noremap <leader>1 1gt
 noremap <leader>2 2gt
