@@ -1,0 +1,22 @@
+snippet exp "expand function"
+node [group="${1:name}"];
+$1 -> ${2:statement} [lhead="cluster_$1"];
+subgraph cluster_$1 {
+	label = "$1";
+	labeljust = "l";
+	$2$0
+}
+endsnippet
+
+snippet di "digraph"
+digraph {
+	fontname = "WenQuanYi Zen Hei";
+	label = "${1:`!v expand("%:rt")`}"
+	labelloc = "t";
+
+	compound = true;
+	node [group="trunk", fontname="WenQuanYi Zen Hei"];
+
+	$0
+}
+endsnippet
