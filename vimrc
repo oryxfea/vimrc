@@ -226,7 +226,7 @@ Plugin 'groenewege/vim-less'
 
 "vim-tmux-navigator {{{1
 "和tmux结合使用的vim插件。用于实现使用ctrl+h/j/k/l在tmux和vim的窗口间无缝切换
-Plugin 'christoomey/vim-tmux-navigator'
+" Plugin 'christoomey/vim-tmux-navigator'
 
 "vim-fugitive {{{1
 "Git插件
@@ -344,11 +344,10 @@ end
 "取消高亮
 map <leader>/ :nohlsearch<cr>
 "窗口切换
-" vim-tmux-navigator设置了这些快捷键
-" map <C-j> <C-W>j
-" map <C-k> <C-W>k
-" map <C-h> <C-W>h
-" map <C-l> <C-W>l
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 "窗口最大化
 noremap <C-w>m <C-w>_
 "使用ctrl-p替代原来ctrl-l的刷新功能
