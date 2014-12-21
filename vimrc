@@ -350,6 +350,7 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 "窗口最大化
 noremap <C-w>m <C-w>_
+"窗口还原 <C-w>=
 "使用ctrl-p替代原来ctrl-l的刷新功能
 map <c-p> :redraw!<cr>
 "新建tab
