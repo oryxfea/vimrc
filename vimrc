@@ -282,6 +282,8 @@ set hlsearch
 syntax enable
 "自动保存
 set autowrite
+"自动读取外界修改的文件
+set autoread
 "显示行号
 set number
 "记录历史的行数
