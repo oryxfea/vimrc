@@ -210,6 +210,12 @@ Plugin 'mattn/emmet-vim'
 "vim-signaature {{{1
 "mark插件
 Plugin 'kshenoy/vim-signature'
+let g:SignaturePurgeConfirmation=1
+let g:SignatureMap = {
+            \ 'ToggleMarkAtLine'   :  "m<Space>",
+            \ 'PurgeMarks'         :  "m."
+            \ }
+noremap '? :marks<cr>
 
 "wmgraphviz {{{1
 "Graphviz插件
