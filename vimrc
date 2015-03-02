@@ -392,6 +392,14 @@ if has("cscope")
     set csverb
 endif
 
+function CscopeRefresh()
+    execute "!cscope -bRq"
+    execute "cscope kill 0"
+    execute "cscope add ."
+endfunction
+
+command CS call CscopeRefresh()
+
 "C++配置"{{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap ,rr :!g++ % -o '%:r' && ./'%:r'<cr>
