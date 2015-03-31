@@ -418,6 +418,13 @@ autocmd BufWritePost *.md,*.markdown silent !markdown % > %:r.html
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:C_Libs.="-lm -lGL -lglut -lGLU"
 
+"LaTeX设置"{{{1
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function ConvertCurrentLaTeXFileToPdf()
+    execute "!pdflatex %"
+endfunction
+
+command TP call ConvertCurrentLaTeXFileToPdf()
 "html,css,less,php缩进 {{{1
 autocmd FileType html,css,less,php setlocal tabstop=2 | setlocal shiftwidth=2
 
