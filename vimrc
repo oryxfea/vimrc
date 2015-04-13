@@ -18,6 +18,19 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
+" pyclewn {{{1
+" gdb的vim前端
+" 使用此插件需要先使用pip安装pyclewn
+set rtp+=~/.vim/bundle/pyclewn
+python << EOF
+try:
+    import clewn
+except:
+    import vim
+    vim.command('echoerr "install python package pyclewn first"')
+EOF
+let g:pyclewn_args="--gdb=async,./.gdbsession --window=bottom"
+
 ""TagList设置"{{{1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""禁止自动改变当前vim窗口大小
@@ -398,7 +411,9 @@ command CS call CscopeRefresh()
 
 "C++配置"{{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap ,rr :!g++ % -o '%:r' && ./'%:r'<cr>
+nmap ,rr :!g++ % -g -o '%:r' -std=c++11 && ./'%:r'<cr>
+nmap ,ry :!g++ % -g -o '%:r' -std=c++11 && gdb -tui ./'%:r'<cr>
+nmap ,rb :!g++ % -g -o '%:r' -std=c++11<cr>
 nmap ,rm :!make<cr>
 
 "Python配置"{{{1
