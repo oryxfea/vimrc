@@ -220,6 +220,10 @@ Plugin 'docunext/closetag.vim'
 "web开发工具
 Plugin 'mattn/emmet-vim'
 
+"zeavim {{{1
+"用vim中打开zeal并查询文档
+Plugin 'KabbAmine/zeavim.vim'
+
 "vim-signaature {{{1
 "mark插件
 Plugin 'kshenoy/vim-signature'
