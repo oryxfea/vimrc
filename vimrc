@@ -321,10 +321,6 @@ set cursorline
 set cursorcolumn
 "设置 Vim 内部使用的字符编码
 set enc=utf-8
-"设置根据语法折叠
-set foldmethod=syntax
-"默认展开所有fold
-set foldlevel=99
 "设置高亮风格。没有这项设置的话选项是黑色字黑色背景
 "hi PmenuSel ctermfg=White
 "记住上次打开时指针位置
