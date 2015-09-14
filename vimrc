@@ -255,6 +255,11 @@ Plugin 'groenewege/vim-less'
 "Git插件
 Plugin 'tpope/vim-fugitive'
 
+"fcixt-vim {{{1
+"智能切换fcitx的激活状态
+Plugin 'lilydjwg/fcitx.vim'
+set ttimeoutlen=100
+
 ""代码补全设置"{{{1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 "set tags+=~/.vim/systags
