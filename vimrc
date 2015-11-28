@@ -57,8 +57,8 @@ let g:pyclewn_args="--gdb=async,./.gdbsession --window=bottom"
 "控制vim的buffers,tabs,windows,workspace等功能的插件
 Plugin 'szw/vim-ctrlspace'
 set hidden
-let g:airline_exclude_preview=1
-let g:ctrlspace_default_mapping_key="<leader><space>"
+"let g:airline_exclude_preview=1
+let g:CtrlSpaceDefaultMappingKey="<leader><space>"
 
 "NERDTree {{{1
 "用于查看文件夹结构
